@@ -1,1 +1,0 @@
-const url = "https://raw.githubusercontent.com/LAL0YT/API-Top-10/master/datos.json"

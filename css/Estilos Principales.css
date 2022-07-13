@@ -35,3 +35,11 @@ button{
   }
 /*aqui termina el encabezado*/
 /*aqui empieza el cuerpo de la pagina*/
+#img{
+    height: 150px;
+    width: 150px;
+    display: flex;
+}
+#ol{
+    display: flex;
+}
