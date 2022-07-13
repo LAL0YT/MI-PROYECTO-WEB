@@ -1,0 +1,37 @@
+/*aqui empieza el encabezad*/
+#logoinicio{
+    width: 70px;
+    height: 70px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#titulocompleto{
+    color: rgb(220, 230, 247);
+}
+#titulop{
+    display: none;
+}
+div#redes{
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+button{
+    color: cornflowerblue;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.contenedor {
+    background-color: rgba(255, 255, 255, 0.116);
+    border-radius: 20px;
+    padding: 20px;
+    display:
+    flex;
+    margin-top: 10px;
+  }
+  header{
+    justify-content: space-between;
+  }
+/*aqui termina el encabezado*/
+/*aqui empieza el cuerpo de la pagina*/
