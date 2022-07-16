@@ -38,42 +38,62 @@ button{
 #cancion1{
     width: 225px;
     height: 225px;
+    margin-top: 10px;
+    margin-left: 20px;
 }
 #cancion2{
     width: 225px;
     height: 225px;
+    margin-top: 10px;
+    margin-left: 20px;
 }
 #cancion3{
     width: 225px;
     height: 225px;
+    margin-top: 10px;
+    margin-left: 20px;
 }
 #cancion4{
     width: 225px;
     height: 225px;
+    margin-top: 10px;
+    margin-left: 20px;
 }
 #cancion5{
     width: 225px;
     height: 225px;
+    margin-top: 10px;
+    margin-left: 20px;
 }
 #cancion6{
     width: 225px;
     height: 225px;
+    margin-top: 10px;
+    margin-left: 20px;
 }
 #cancion7{
     width: 225px;
     height: 225px;
+    margin-top: 10px;
+    margin-left: 20px;
 }
 #cancion8{
     width: 225px;
     height: 225px;
+    margin-top: 10px;
+    margin-left: 20px;
 }
 #cancion9{
     width: 225px;
     height: 225px;
+    margin-top: 10px;
+    margin-left: 20px;
 }
 #cancion10{
     width: 225px;
     height: 225px;
+    margin-top: 10px;
+    margin-left: 20px;
 }
 #yt-music-nombrecancion{
     display: flex;
@@ -81,4 +101,15 @@ button{
 #iconoclsificacion{
     margin-left: 5px;
     margin-right: 5px;
+}
+#ytmusic-carrusel{
+    display: flex;
+    justify-content: flex-start
+}
+#items-nom-des1{
+    margin-left: 20px;
+}
+#items-nom-des{
+    margin-top: 15px;
+    margin-left: 20px;
 }
