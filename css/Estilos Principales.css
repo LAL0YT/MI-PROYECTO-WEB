@@ -23,7 +23,7 @@ button{
 }
 
 .contenedor {
-    background-color: rgba(255, 255, 255, 0.116);
+    background-color: rgb(49, 49, 49);
     border-radius: 20px;
     padding: 20px;
     display:
@@ -35,11 +35,50 @@ button{
   }
 /*aqui termina el encabezado*/
 /*aqui empieza el cuerpo de la pagina*/
-#img{
-    height: 150px;
-    width: 150px;
+#cancion1{
+    width: 225px;
+    height: 225px;
+}
+#cancion2{
+    width: 225px;
+    height: 225px;
+}
+#cancion3{
+    width: 225px;
+    height: 225px;
+}
+#cancion4{
+    width: 225px;
+    height: 225px;
+}
+#cancion5{
+    width: 225px;
+    height: 225px;
+}
+#cancion6{
+    width: 225px;
+    height: 225px;
+}
+#cancion7{
+    width: 225px;
+    height: 225px;
+}
+#cancion8{
+    width: 225px;
+    height: 225px;
+}
+#cancion9{
+    width: 225px;
+    height: 225px;
+}
+#cancion10{
+    width: 225px;
+    height: 225px;
+}
+#yt-music-nombrecancion{
     display: flex;
 }
-#ol{
-    display: flex;
+#iconoclsificacion{
+    margin-left: 5px;
+    margin-right: 5px;
 }
