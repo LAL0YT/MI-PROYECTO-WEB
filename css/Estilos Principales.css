@@ -113,3 +113,20 @@ button{
     margin-top: 15px;
     margin-left: 20px;
 }
+
+
+/*responsivo*/
+@media  screen and (max-width: 680px) {
+    #titulocompleto{display: none;
+        
+    }
+    #titulop{
+        display: block;
+    }
+    #redes{
+        visibility:hidden
+    }
+    .contenedor{
+        display: block;
+    }
+}
