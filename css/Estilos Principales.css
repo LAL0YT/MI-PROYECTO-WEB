@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@600&family=PT+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@600&family=PT+Sans:wght@700&family=Roboto:wght@700&display=swap');
+
 /*aqui empieza el encabezad*/
 #logoinicio{
     width: 70px;
@@ -35,70 +38,17 @@ button{
   }
 /*aqui termina el encabezado*/
 /*aqui empieza el cuerpo de la pagina*/
-#cancion1{
+.imgcancion{
     width: 225px;
     height: 225px;
     margin-top: 10px;
     margin-left: 20px;
 }
-#cancion2{
-    width: 225px;
-    height: 225px;
-    margin-top: 10px;
-    margin-left: 20px;
-}
-#cancion3{
-    width: 225px;
-    height: 225px;
-    margin-top: 10px;
-    margin-left: 20px;
-}
-#cancion4{
-    width: 225px;
-    height: 225px;
-    margin-top: 10px;
-    margin-left: 20px;
-}
-#cancion5{
-    width: 225px;
-    height: 225px;
-    margin-top: 10px;
-    margin-left: 20px;
-}
-#cancion6{
-    width: 225px;
-    height: 225px;
-    margin-top: 10px;
-    margin-left: 20px;
-}
-#cancion7{
-    width: 225px;
-    height: 225px;
-    margin-top: 10px;
-    margin-left: 20px;
-}
-#cancion8{
-    width: 225px;
-    height: 225px;
-    margin-top: 10px;
-    margin-left: 20px;
-}
-#cancion9{
-    width: 225px;
-    height: 225px;
-    margin-top: 10px;
-    margin-left: 20px;
-}
-#cancion10{
-    width: 225px;
-    height: 225px;
-    margin-top: 10px;
-    margin-left: 20px;
-}
-#yt-music-nombrecancion{
+.yt-music-nombrecancion{
     display: flex;
+    font-family: 'Roboto', sans-serif;
 }
-#iconoclsificacion{
+.iconoclsificacion{
     margin-left: 5px;
     margin-right: 5px;
 }
@@ -109,12 +59,30 @@ button{
 #items-nom-des1{
     margin-left: 20px;
 }
-#items-nom-des{
+.items-nom-des{
     margin-top: 15px;
     margin-left: 20px;
 }
-
-
+.des{
+    font-family: 'PT Sans', sans-serif;
+}
+.ytmusic-shelf{
+    display: flex;
+    justify-content:space-between;
+}
+.boton-grupo{
+    margin-right: 100px;
+    margin-top: 35px;
+}.ytmusic-carrusel{
+    margin-left: 50px;
+    margin-top: 5px;
+}
+#ytmusic-carrusel{
+    margin-left: 35px;
+}
+.material-symbols-outlined{
+    cursor: pointer;
+}
 /*responsivo*/
 @media  screen and (max-width: 680px) {
     #titulocompleto{display: none;
