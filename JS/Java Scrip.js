@@ -24,8 +24,9 @@ function mostrar_actuales(){
             let el_artista = top_contenedor[i].querySelector(".artista");
             el_artista.innerHTML = datos.artista1;
             let el_artista2 = top_contenedor[i].querySelector(".artista2");
+            el_artista2.innerHTML = "";
             if(datos.artista2 !=undefined) {
-                el_artista2.innerHTML += "<span>y  </span>" + "<a href=" +">" + datos.artista2 +"</a>";
+                el_artista2.innerHTML = "<span>y  </span>" + "<a href=" +">" + datos.artista2 +"</a>";
             }
             let el_vistas = top_contenedor[i].querySelector(".vistas1");
             el_vistas.innerHTML = datos.visitas +"M De Visitas";
