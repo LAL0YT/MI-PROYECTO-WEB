@@ -1,0 +1,50 @@
+@media screen and (min-width: 1024px){
+    .contenedor{
+        width: auto;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    #ytmusic-carrusel{
+        display: block;
+        margin-left: 20%;
+    }   
+    .imgcancion{
+        width:400px ;
+        height:400px ;
+    } 
+}
+
+@media screen and (max-width: 767px){ 
+    #ytmusic-carrusel{
+        display: block;
+    }
+    .imgcancion{
+        width:185px ;
+        height:185px ;
+    } 
+    div#redes{
+        display: none;
+    }
+    #titulocompleto{
+        display: none;
+    }
+    #titulop{
+        display: block;
+    }
+    .boton-grupo{
+        margin-left: 20px;
+
+    }
+    .contenedor{
+        display: block;
+    }
+    #logoinicio{
+        height: 50px;
+        width: 50px;
+    }
+    .boton-grupo span{
+        margin-top: 5px;
+    }
+}
