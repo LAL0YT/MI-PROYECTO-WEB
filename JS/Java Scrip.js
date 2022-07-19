@@ -3,6 +3,7 @@ const top_contenedor = document.querySelectorAll(".cancion");
 const top_contenedores = top_contenedor.length;
 const canciones_max = 10;
 let posicion_actual = 1;
+const urlaalbun = document.querySelectorAll("#linkaalbun")
 function obtener_cancion(posicion){
     return fetch(uri + "canciones.json").then(function(respuesta){
         return respuesta.json();
