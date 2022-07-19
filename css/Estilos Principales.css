@@ -99,3 +99,14 @@ button{
     color:rgb(124, 124, 124);
     margin-left: 5px;
 }
+.iconoplay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.contenedorimg{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}

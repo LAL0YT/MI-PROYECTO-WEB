@@ -55,6 +55,11 @@
             <yt-music-one class="cancion">
                 <yt-music-imagen-cancion>
                     <div class="contenedorimg">
+                        <div class="iconoplay">
+                            <span class="material-symbols-outlined">
+                                play_arrow
+                            </span>
+                        </div>
                         <yt-imagen>
                             <img src="" alt="" class="imgcancion" id="cancion1"> 
                         </yt-imagen>
@@ -84,7 +89,12 @@
             </yt-music-one>
             <yt-music-two class="cancion">
                 <yt-music-imagen-cancion>
-                    <div>
+                    <div class="contenedorimg">
+                        <div class="iconoplay">
+                            <span class="material-symbols-outlined">
+                                play_arrow
+                            </span>
+                        </div>
                         <yt-imagen>
                             <img src="" alt="" class="imgcancion" id="cancion3">
                         </yt-imagen>
@@ -114,7 +124,12 @@
             </yt-music-two>
             <yt-music-tres class="cancion">
                 <yt-music-imagen-cancion>
-                    <div>
+                    <div class="contenedorimg">
+                        <div class="iconoplay">
+                            <span class="material-symbols-outlined">
+                                play_arrow
+                            </span>
+                        </div>
                         <yt-imagen>
                             <img src="" alt="" class="imgcancion" id="cancion3">
                         </yt-imagen>
@@ -144,7 +159,12 @@
             </yt-music-tres>
             <yt-music-cuatro class="cancion">
                 <yt-music-imagen-cancion>
-                    <div>
+                    <div class="contenedorimg">
+                        <div class="iconoplay">
+                            <span class="material-symbols-outlined">
+                                play_arrow
+                            </span>
+                        </div>
                         <yt-imagen>
                             <img src="" alt="" class="imgcancion" id="cancion4">
                         </yt-imagen>
@@ -174,7 +194,12 @@
             </yt-music-cuatro>
             <yt-music-cinco class="cancion">
                 <yt-music-imagen-cancion>
-                        <div>
+                        <div class="contenedorimg">
+                            <div class="iconoplay">
+                                <span class="material-symbols-outlined">
+                                    play_arrow
+                                </span>
+                            </div>
                             <yt-imagen>
                                 <img src="" alt="" class="imgcancion" id="cancion5">
                             </yt-imagen>
@@ -204,6 +229,53 @@
             </yt-music-cinco>
     </ytmusic-carrusel>
 </div>
+<yt-music-barrra-audio>
+    <div></div>
+    <div>
+        <div>
+            <span><span class="material-symbols-outlined">
+                skip_previous
+                </span></span>
+            <span><span class="material-symbols-outlined" id="play-stop">
+                pause
+                </span>
+            </span>
+            <span><span class="material-symbols-outlined">
+                skip_next
+                </span></span>
+        </div>
+    </div>
+    <div>
+        <img src="" alt="" id="imgrepro">
+        <div>
+            <span id="titulo-repro"></span>
+        </div>
+        <div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div></div>
+    </div>
+    <div>
+        <div>
+            <div></div>
+            <div><span class="material-symbols-outlined">
+                volume_up
+                </span></div>
+        </div>
+        <div>
+            <span class="material-symbols-outlined">
+                repeat
+            </span>
+        </div>
+    </div>
+</yt-music-barrra-audio>
+<audio>
+    <source src="" type="audio/mp3">
+    Hubo Un Problema Intenta De Nuevo
+</audio>
 <script src="JS/Java Scrip.js"></script>
+<script src="JS/Reproductor.js"></script>
 </body>
 </html>
