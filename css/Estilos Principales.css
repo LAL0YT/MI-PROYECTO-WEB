@@ -54,7 +54,7 @@ button{
 }
 #ytmusic-carrusel{
     display: flex;
-    justify-content: flex-start
+    justify-content: flex-start;
 }
 #items-nom-des1{
     margin-left: 20px;
@@ -83,18 +83,21 @@ button{
 .material-symbols-outlined{
     cursor: pointer;
 }
-/*responsivo*/
-@media  screen and (max-width: 680px) {
-    #titulocompleto{display: none;
-        
-    }
-    #titulop{
-        display: block;
-    }
-    #redes{
-        visibility:hidden
-    }
-    .contenedor{
-        display: block;
-    }
+.logoimg{
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+}
+.artistas{
+    display: flex;
+    flex-direction: row;
+}
+.artista{
+    text-decoration: none;
+    color: rgb(146, 146, 146);
+}
+.artista2 a{
+    text-decoration: none;
+    color: rgb(146, 146, 146);
 }

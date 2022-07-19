@@ -26,10 +26,12 @@ function mostrar_actuales(){
             let el_artista2 = top_contenedor[i].querySelector(".artista2");
             el_artista2.innerHTML = "";
             if(datos.artista2 !=undefined) {
-                el_artista2.innerHTML = "<span>y  </span>" + "<a href=" +">" + datos.artista2 +"</a>";
+                el_artista2.innerHTML = "<span>y  </span>" + "<a href="+datos.lartista2 + "  target=_blank"+">" + datos.artista2 +"</a>";
             }
             let el_vistas = top_contenedor[i].querySelector(".vistas1");
             el_vistas.innerHTML = datos.visitas +"M De Visitas";
+            let el_lartista = top_contenedor[i].querySelector(".artista");
+            el_lartista.href = datos.lartista1;
         });
     }
 }
@@ -38,6 +40,7 @@ const el_siguiente = document.querySelector(".boton-grupo span:last-child");
 const el_anterior = document.querySelector(".boton-grupo span:first-child");
 
 el_siguiente.addEventListener("click", function() {
+
     if(el_siguiente.classList.contains("desactivado")){
         return;
     }
@@ -47,6 +50,7 @@ el_siguiente.addEventListener("click", function() {
         el_siguiente.classList.add("desactivado");
     }
     el_anterior.classList.remove("desactivado");
+    
 });
 el_anterior.addEventListener("click", function(){
     if(el_anterior.classList.contains("desactivado")){
@@ -58,4 +62,5 @@ el_anterior.addEventListener("click", function(){
         el_anterior.classList.add("desactivado");
     }
     el_siguiente.classList.remove("desactivado");
+    
 });
