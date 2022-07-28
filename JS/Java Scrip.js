@@ -3,21 +3,21 @@ const top_contenedor = document.querySelectorAll(".cancion");
 const top_contenedores = top_contenedor.length;
 const canciones_max = 10;
 let posicion_actual = 1;
-const urlaalbun = document.querySelectorAll("#linkaalbun")
 function obtener_cancion(posicion){
     return fetch(uri + "canciones.json").then(function(respuesta){
         return respuesta.json();
     }).then(function(datos){
-        return datos[posicion];
+        return datos[posicion]
     }).catch(function(error){
         console.log(error);
     });
 }
+
 function mostrar_actuales(){
     for(let i =0; i <top_contenedores; i++){
         obtener_cancion(posicion_actual + i).then(function(datos){
-            let el_imagen = top_contenedor[i].querySelector("yt-music-imagen-cancion div yt-imagen img");
-            el_imagen.src = uri + datos.imagen;
+            let el_imagen = top_contenedor[i].querySelector(".contenedorimg");
+            el_imagen.innerHTML = "<div class=iconoplay> <span class=material-symbols-outlined>play_arrow</span></div><yt-imagen><img src="+ uri + datos.imagen +" class=imgcancion id=cancion1></yt-imagen>"
             let el_posicion = top_contenedor[i].querySelector("div div yt-music-posicion");
             el_posicion.innerHTML = datos.posicion;
             let el_nombre = top_contenedor[i].querySelector("div div yt-music-custom-titulo");

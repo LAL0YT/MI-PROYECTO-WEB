@@ -4,10 +4,13 @@
         margin-left: 20px;
         margin-top: 20px;
     }
+    #ytmusic-carrusel{
+        flex-wrap: wrap;
+    }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px){
     #ytmusic-carrusel{
-        display: block;
+        flex-wrap: wrap;
         margin-left: 20%;
     }   
     .imgcancion{
@@ -18,7 +21,7 @@
 
 @media screen and (max-width: 767px){ 
     #ytmusic-carrusel{
-        display: block;
+        flex-wrap: wrap;
     }
     .imgcancion{
         width:185px ;

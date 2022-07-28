@@ -4,7 +4,7 @@
 <link href="css/Estilos Principales.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="css/Responsivo.css">    
 <link rel="shortcut icon" href="https://raw.githubusercontent.com/LAL0YT/API-Top-10/master/IMG/logo1.png" type="image/x-icon">  
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,1,200" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content="dark" name="color-scheme">
@@ -33,11 +33,6 @@
             <h2 class="titulo-de-la-seccion" tabindex="1" aria-label="Top 10 Canciones Del 2022">
                <div class="detalles" id="detalles">
                 <yt-titulo class="titulo-texto" arial-hidden="true">Top 10 Canciones Del 2022  </yt-titulo>
-                <a href="https://music.youtube.com/playlist?list=PL6LRQ9EhbH2Zvta0EHQb45sg9KPngAoeF&feature=share" target="_blank" id="linkaalbun">
-                    <span class="material-symbols-outlined">
-                        library_music
-                    </span>
-                </a>
                </div> 
             </h2>
         </ytmusic-carrusel-basic-header>
@@ -55,14 +50,7 @@
             <yt-music-one class="cancion">
                 <yt-music-imagen-cancion>
                     <div class="contenedorimg">
-                        <div class="iconoplay">
-                            <span class="material-symbols-outlined">
-                                play_arrow
-                            </span>
-                        </div>
-                        <yt-imagen>
-                            <img src="" alt="" class="imgcancion" id="cancion1"> 
-                        </yt-imagen>
+                        
                     </div>
                 </yt-music-imagen-cancion>    
                 <div id="items-nom-des1">
@@ -90,14 +78,7 @@
             <yt-music-two class="cancion">
                 <yt-music-imagen-cancion>
                     <div class="contenedorimg">
-                        <div class="iconoplay">
-                            <span class="material-symbols-outlined">
-                                play_arrow
-                            </span>
-                        </div>
-                        <yt-imagen>
-                            <img src="" alt="" class="imgcancion" id="cancion3">
-                        </yt-imagen>
+                        
                     </div>
                 </yt-music-imagen-cancion>
                 <div class="items-nom-des">        
@@ -125,14 +106,7 @@
             <yt-music-tres class="cancion">
                 <yt-music-imagen-cancion>
                     <div class="contenedorimg">
-                        <div class="iconoplay">
-                            <span class="material-symbols-outlined">
-                                play_arrow
-                            </span>
-                        </div>
-                        <yt-imagen>
-                            <img src="" alt="" class="imgcancion" id="cancion3">
-                        </yt-imagen>
+                        
                     </div>
                 </yt-music-imagen-cancion>
                 <div class="items-nom-des">
@@ -160,14 +134,7 @@
             <yt-music-cuatro class="cancion">
                 <yt-music-imagen-cancion>
                     <div class="contenedorimg">
-                        <div class="iconoplay">
-                            <span class="material-symbols-outlined">
-                                play_arrow
-                            </span>
-                        </div>
-                        <yt-imagen>
-                            <img src="" alt="" class="imgcancion" id="cancion4">
-                        </yt-imagen>
+                        
                     </div>
                 </yt-music-imagen-cancion>
                 <div class="items-nom-des">
@@ -195,14 +162,7 @@
             <yt-music-cinco class="cancion">
                 <yt-music-imagen-cancion>
                         <div class="contenedorimg">
-                            <div class="iconoplay">
-                                <span class="material-symbols-outlined">
-                                    play_arrow
-                                </span>
-                            </div>
-                            <yt-imagen>
-                                <img src="" alt="" class="imgcancion" id="cancion5">
-                            </yt-imagen>
+                            
                         </div>
                 </yt-music-imagen-cancion>
                 <div class="items-nom-des">    
@@ -230,37 +190,51 @@
     </ytmusic-carrusel>
 </div>
 <yt-music-barrra-audio>
-    <div></div>
-    <div>
+    <div id="stop">
         <div>
             <span><span class="material-symbols-outlined">
                 skip_previous
                 </span></span>
             <span><span class="material-symbols-outlined" id="play-stop">
-                pause
+                play_arrow
                 </span>
             </span>
-            <span><span class="material-symbols-outlined">
+            <span><span  id="next"class="material-symbols-outlined">
                 skip_next
                 </span></span>
         </div>
     </div>
-    <div>
-        <img src="" alt="" id="imgrepro">
-        <div>
-            <span id="titulo-repro"></span>
-        </div>
-        <div>
-            <div></div>
-            <div></div>
-            <div></div>
+    <div id="des">
+        <div id="descri">
+            <div><img src="https://lh3.googleusercontent.com/po_SJcslG13skyrf_oV_9K5_qjjbmYsTw91GMcImVS2TiXMHG0Hvf0IErLNV0z8W6ydpyotHVkpa2hMf=w544-h544-l90-rj" alt="" id="imghola"></div>
+            <div id="divdes">
+                <div id="nom">Titi Me Pregunto<span></span></div>
+                <div><span id="descrip">
+                    <span>
+                        <span class="nombreart">Lalo</span>
+                        <span>y</span>
+                        <span class="nombreart">Aicha</span>
+                    </span>
+                    <span>•</span>
+                    <span class="nombreart">118m</span>
+                    <span>•</span>
+                    <span class="nombreart">Un Verano Sin Ti</span>
+                </span></div>
+            </div>
+            <div><span id="like"class="material-symbols-outlined">
+                thumb_up_off
+                </span>
+                <span id="deslike"class="material-symbols-outlined">
+                    thumb_down
+                    </span>
+            </div>    
         </div>
         <div></div>
     </div>
-    <div>
+    <div id="audio">
         <div>
             <div></div>
-            <div><span class="material-symbols-outlined">
+            <div><span class="material-symbols-outlined" id="volumen">
                 volume_up
                 </span></div>
         </div>
@@ -270,11 +244,11 @@
             </span>
         </div>
     </div>
+    <audio id="musica">
+        <source id="musc"src="BAD BUNNY - A TU MERCED [1 HORA].mp3" type="audio/mp3">
+        Hubo Un Problema Intenta De Nuevo
+    </audio>
 </yt-music-barrra-audio>
-<audio>
-    <source src="" type="audio/mp3">
-    Hubo Un Problema Intenta De Nuevo
-</audio>
 <script src="JS/Java Scrip.js"></script>
 <script src="JS/Reproductor.js"></script>
 </body>
