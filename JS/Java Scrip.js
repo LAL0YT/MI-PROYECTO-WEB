@@ -1,8 +1,15 @@
 const uri = "https://raw.githubusercontent.com/LAL0YT/API-Top-10/master/";
+const el_play_stop = document.querySelector("#play-stop")
 const top_contenedor = document.querySelectorAll(".cancion");
 const top_contenedores = top_contenedor.length;
 const canciones_max = 10;
-let posicion_actual = 1;
+const posicion_actual = 1;
+const la_img = document.querySelector("#imghola");
+const nombre = document.querySelector("#nom");
+const art = document.querySelector("#nombreart");
+const vis = document.querySelector("#millones");
+const source = document.querySelector("#musc");
+const vol = document.querySelector(".volumen")
 function obtener_cancion(posicion){
     return fetch(uri + "canciones.json").then(function(respuesta){
         return respuesta.json();
@@ -18,6 +25,14 @@ function mostrar_actuales(){
         obtener_cancion(posicion_actual + i).then(function(datos){
             let el_imagen = top_contenedor[i].querySelector(".contenedorimg");
             el_imagen.innerHTML = "<div class=iconoplay> <span class=material-symbols-outlined>play_arrow</span></div><yt-imagen><img src="+ uri + datos.imagen +" class=imgcancion id=cancion1></yt-imagen>"
+            el_imagen.setAttribute("data-audio", datos.audio);
+            el_imagen.addEventListener("click", function() {
+                el_play_stop.innerHTML = "pause"
+                actualizar_reproductor(datos.imagen, datos.nombre, datos.artista1, datos.visitas);
+                source.src = uri + datos.audio;
+                audio.load();
+                audio.play();
+            });
             let el_posicion = top_contenedor[i].querySelector("div div yt-music-posicion");
             el_posicion.innerHTML = datos.posicion;
             let el_nombre = top_contenedor[i].querySelector("div div yt-music-custom-titulo");
@@ -35,6 +50,12 @@ function mostrar_actuales(){
             el_lartista.href = datos.lartista1;
         });
     }
+}
+function actualizar_reproductor(imagen, nombre, artista1, visitas ) {
+    la_img.src = uri + imagen;
+    nombre.innerHTML = nombre;
+    art.innerHTML = artista1;
+    vis.innerHTML = visitas +"M De Visitas";
 }
 mostrar_actuales();
 const el_siguiente = document.querySelector(".boton-grupo span:last-child");
@@ -65,3 +86,15 @@ el_anterior.addEventListener("click", function(){
     el_siguiente.classList.remove("desactivado");
     
 });
+el_play_stop.addEventListener("click", function() {
+    if(audio.paused) {
+      audio.play();
+      el_play_stop.innerHTML = "pause";
+    } else {
+      audio.pause();
+      el_play_stop.innerHTML = "play_arrow";
+    }
+  });
+vol.addEventListener("change", function() {
+    audio.volume = el_volumen.value / 100;
+  });
