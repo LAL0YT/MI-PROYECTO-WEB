@@ -3,13 +3,14 @@ const el_play_stop = document.querySelector("#play-stop")
 const top_contenedor = document.querySelectorAll(".cancion");
 const top_contenedores = top_contenedor.length;
 const canciones_max = 10;
-const posicion_actual = 1;
+posicion_actual = 1;
 const la_img = document.querySelector("#imghola");
 const nombre = document.querySelector("#nom");
 const art = document.querySelector("#nombreart");
 const vis = document.querySelector("#millones");
 const source = document.querySelector("#musc");
-const vol = document.querySelector(".volumen")
+const vol = document.querySelector(".volumen");
+const audio = document.getElementById("musica");
 function obtener_cancion(posicion){
     return fetch(uri + "canciones.json").then(function(respuesta){
         return respuesta.json();
