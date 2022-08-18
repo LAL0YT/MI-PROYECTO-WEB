@@ -97,5 +97,5 @@ el_play_stop.addEventListener("click", function() {
     }
   });
 vol.addEventListener("change", function() {
-    audio.volume = el_volumen.value / 100;
+    audio.volume = vol.value / 100;
   });
